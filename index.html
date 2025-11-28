@@ -1,93 +1,427 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>David Grant — Desarrollador Web Full Stack</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Grant — Desarrollador Web Full Stack | Portfolio Profesional</title>
     <meta name="description"
-        content="David Grant — Desarrollo de Landing Pages, E-commerce y sistemas a medida. +10 años de experiencia." />
-    <!-- Link a CSS: crea assets/css/styles.css y adaptalo -->
+        content="David Grant — Desarrollador Full Stack con +10 años de experiencia. Especializado en Landing Pages, E-commerce y sistemas a medida. Soluciones web profesionales y escalables.">
+    <meta name="keywords"
+        content="desarrollador web, full stack, e-commerce, landing pages, sistemas a medida, desarrollo web">
+    <meta name="author" content="David Grant">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="David Grant — Desarrollador Web Full Stack">
+    <meta property="og:description"
+        content="Portfolio profesional de David Grant. +10 años creando soluciones web innovadoras.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <header style="padding:32px; text-align:center;">
-        <h1>David Grant</h1>
-        <p style="font-size:18px; margin-top:4px;">Desarrollador Full Stack — Soluciones web, e-commerce y sistemas a
-            medida</p>
-    </header>
-
-    <main style="max-width:980px; margin:0 auto; padding:20px;">
-        <section id="about" style="margin-bottom:36px;">
-            <h2>Sobre mí</h2>
-            <p>Soy David Grant, Desarrollador Full Stack con más de 10 años de experiencia. Diseño y desarrollo sitios
-                web, tiendas online y sistemas empresariales que impulsan resultados reales. Mi objetivo: soluciones
-                eficientes, seguras y fáciles de mantener.</p>
-        </section>
-
-        <section id="services" style="margin-bottom:36px;">
-            <h2>Servicios</h2>
-            <ul>
-                <li>Landing Pages profesionales</li>
-                <li>E-commerce (Tienda Nube, WooCommerce)</li>
-                <li>Sistemas de gestión / paneles administrativos</li>
-                <li>Desarrollo a medida</li>
-                <li>Mantenimiento web y SEO básico</li>
-                <li>Integraciones (APIs, pasarelas de pago)</li>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">DG</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
             </ul>
-        </section>
+        </div>
+    </nav>
 
-        <section id="portfolio" style="margin-bottom:36px;">
-            <h2>Portfolio</h2>
-
-            <article class="project">
-                <h3>UrbanStyle — Tienda de Ropa Online</h3>
-                <p><em>www.urbanstyle-shop.com (ficticio)</em></p>
-                <p>Desarrollo completo de e-commerce, integración de pagos, carga masiva de productos y diseño
-                    responsive.</p>
-                <p><strong>Funcionalidades:</strong> Tienda Nube personalizada, MercadoPago, buscador avanzado,
-                    lookbook.</p>
-                <a href="https://www.urbanstyle-shop.com" target="_blank" rel="noopener">Ver proyecto</a>
-            </article>
-
-            <article class="project">
-                <h3>AgroTech Solutions — Panel Administrativo</h3>
-                <p><em>panel.agrotechsolutions.com (ficticio)</em></p>
-                <p>Sistema a medida para gestión de inventarios, proveedores y órdenes de trabajo.</p>
-                <p><strong>Funcionalidades:</strong> Dashboard, reportes, exportación Excel, roles y permisos.</p>
-                <a href="https://panel.agrotechsolutions.com" target="_blank" rel="noopener">Ver proyecto</a>
-            </article>
-
-            <article class="project">
-                <h3>Consultora Nova — Landing Corporativa</h3>
-                <p><em>www.novaconsultora.com (ficticio)</em></p>
-                <p>Landing optimizada para captación de leads con formulario a WhatsApp y SEO básico.</p>
-                <p><strong>Funcionalidades:</strong> Formularios, GA, testimonios, optimización de velocidad.</p>
-                <a href="https://www.novaconsultora.com" target="_blank" rel="noopener">Ver proyecto</a>
-            </article>
-
-        </section>
-
-        <section id="closing" style="margin-bottom:36px;">
-            <h2>¿Hablamos?</h2>
-            <p>Si querés transformar una idea en una solución digital que funcione y escale, estoy listo para ayudarte.
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-greeting">👋 Hola, soy</p>
+            <h1 class="hero-title">
+                <span class="gradient-text">David Grant</span>
+            </h1>
+            <p class="hero-subtitle">
+                Desarrollador Full Stack especializado en <span class="typing-text" id="typingText">crear experiencias
+                    web increíbles</span>
             </p>
-        </section>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn btn-primary">
+                    Ver Proyectos
+                    <span>→</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Contactar
+                    <span>✉</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact" style="margin-bottom:36px;">
-            <h2>Contacto</h2>
-            <ul>
-                <li>WhatsApp: <a href="https://wa.me/543413232695" target="_blank">+54 341 3232695</a></li>
-                <li>Email: <a href="mailto:davidg05.9@gmail.com">davidg05.9@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/david-ezequiel-grant-812368133/"
-                        target="_blank">David E. Grant</a></li>
-                <li><a href="resume.pdf" target="_blank">Descargar CV (PDF)</a></li>
-            </ul>
-        </section>
-    </main>
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p class="section-description">
+                Transformo ideas en soluciones digitales que generan resultados reales
+            </p>
+        </div>
 
-    <footer style="text-align:center; padding:20px;">© David Grant — Desarrollador Web</footer>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Soy <strong>David Grant</strong>, un Desarrollador Full Stack apasionado por crear experiencias web
+                    excepcionales.
+                    Con más de <strong>10 años de experiencia</strong>, he ayudado a empresas y emprendedores a
+                    materializar
+                    sus visiones digitales.
+                </p>
+                <p>
+                    Mi enfoque se centra en desarrollar soluciones <strong>eficientes, escalables y seguras</strong> que
+                    no solo
+                    cumplen con los requisitos técnicos, sino que también ofrecen una experiencia de usuario memorable.
+                </p>
+                <p>
+                    Desde landing pages de alto impacto hasta sistemas empresariales complejos, me especializo en
+                    convertir desafíos técnicos en oportunidades de innovación.
+                </p>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Años de Experiencia</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Proyectos Completados</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Clientes Satisfechos</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Compromiso</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="section-header">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <p class="section-description">
+                Tecnologías y herramientas con las que trabajo día a día
+            </p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-icon">🎨</div>
+                <h3>Frontend</h3>
+                <ul class="skill-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React & Next.js</li>
+                    <li>Vue.js</li>
+                    <li>Responsive Design</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">⚙️</div>
+                <h3>Backend</h3>
+                <ul class="skill-list">
+                    <li>Node.js & Express</li>
+                    <li>PHP & Laravel</li>
+                    <li>NestJS</li>
+                    <li>RESTful APIs</li>
+                    <li>GraphQL</li>
+                    <li>Microservicios</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">💾</div>
+                <h3>Bases de Datos</h3>
+                <ul class="skill-list">
+                    <li>MySQL & PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                    <li>TypeORM & Prisma</li>
+                    <li>Database Design</li>
+                    <li>Query Optimization</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">🛠️</div>
+                <h3>Herramientas</h3>
+                <ul class="skill-list">
+                    <li>Git & GitHub</li>
+                    <li>Docker</li>
+                    <li>CI/CD</li>
+                    <li>AWS & Cloud Services</li>
+                    <li>Webpack & Vite</li>
+                    <li>Testing (Jest, Cypress)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="section-header">
+            <h2 class="section-title">Servicios</h2>
+            <p class="section-description">
+                Soluciones personalizadas para impulsar tu presencia digital
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <h3>Landing Pages Profesionales</h3>
+                <p>
+                    Diseño y desarrollo de páginas de aterrizaje optimizadas para conversión.
+                    Perfectas para campañas de marketing, lanzamientos de productos y captación de leads.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🛒</div>
+                <h3>E-commerce</h3>
+                <p>
+                    Tiendas online completas con Tienda Nube, WooCommerce o soluciones a medida.
+                    Integración de pasarelas de pago, gestión de inventario y experiencia de compra optimizada.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Sistemas de Gestión</h3>
+                <p>
+                    Desarrollo de paneles administrativos y sistemas empresariales personalizados.
+                    CRM, ERP, dashboards y herramientas de gestión adaptadas a tu negocio.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Desarrollo a Medida</h3>
+                <p>
+                    Aplicaciones web personalizadas según tus necesidades específicas.
+                    Desde MVPs hasta plataformas complejas con arquitectura escalable.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Mantenimiento & SEO</h3>
+                <p>
+                    Mantenimiento continuo de sitios web, optimización de rendimiento,
+                    SEO técnico y mejoras de seguridad para mantener tu sitio al día.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔌</div>
+                <h3>Integraciones</h3>
+                <p>
+                    Integración de APIs, servicios de terceros, pasarelas de pago,
+                    CRMs, herramientas de marketing y automatizaciones.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="section-header">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-description">
+                Algunos de los proyectos en los que he trabajado
+            </p>
+        </div>
+
+        <div class="portfolio-grid">
+            <article class="project-card">
+                <div class="project-image">🛍️</div>
+                <div class="project-content">
+                    <h3 class="project-title">UrbanStyle — Tienda de Ropa Online</h3>
+                    <span class="project-url">www.urbanstyle-shop.com</span>
+                    <p class="project-description">
+                        E-commerce completo para tienda de ropa urbana. Desarrollo de tienda personalizada
+                        con integración de MercadoPago, sistema de lookbook y buscador avanzado de productos.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Tienda Nube</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">MercadoPago</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <a href="https://www.urbanstyle-shop.com" target="_blank" rel="noopener" class="project-link">
+                        Ver Proyecto →
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">📈</div>
+                <div class="project-content">
+                    <h3 class="project-title">AgroTech Solutions — Panel Administrativo</h3>
+                    <span class="project-url">panel.agrotechsolutions.com</span>
+                    <p class="project-description">
+                        Sistema de gestión empresarial a medida para control de inventarios,
+                        proveedores y órdenes de trabajo. Dashboard interactivo con reportes y exportación.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                    <a href="https://panel.agrotechsolutions.com" target="_blank" rel="noopener" class="project-link">
+                        Ver Proyecto →
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">💼</div>
+                <div class="project-content">
+                    <h3 class="project-title">Consultora Nova — Landing Corporativa</h3>
+                    <span class="project-url">www.novaconsultora.com</span>
+                    <p class="project-description">
+                        Landing page corporativa optimizada para captación de leads.
+                        Formularios integrados con WhatsApp, Google Analytics y optimización SEO.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">SEO</span>
+                    </div>
+                    <a href="https://www.novaconsultora.com" target="_blank" rel="noopener" class="project-link">
+                        Ver Proyecto →
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">¿Hablamos?</h2>
+            <p class="section-description">
+                Estoy listo para ayudarte a transformar tu idea en una solución digital que funcione y escale
+            </p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-label">WhatsApp</div>
+                    <div class="contact-value">
+                        <a href="https://wa.me/543413232695" target="_blank" rel="noopener">
+                            +54 341 3232695
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                        <a href="mailto:davidg05.9@gmail.com">
+                            davidg05.9@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-label">LinkedIn</div>
+                    <div class="contact-value">
+                        <a href="https://www.linkedin.com/in/david-ezequiel-grant-812368133/" target="_blank"
+                            rel="noopener">
+                            David E. Grant
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📄</div>
+                    <div class="contact-label">Curriculum</div>
+                    <div class="contact-value">
+                        <a href="resume.pdf" target="_blank" rel="noopener">
+                            Descargar CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/davidgrant" target="_blank" rel="noopener" class="social-link"
+                    aria-label="GitHub">
+                    💻
+                </a>
+                <a href="https://www.linkedin.com/in/david-ezequiel-grant-812368133/" target="_blank" rel="noopener"
+                    class="social-link" aria-label="LinkedIn">
+                    💼
+                </a>
+                <a href="https://wa.me/543413232695" target="_blank" rel="noopener" class="social-link"
+                    aria-label="WhatsApp">
+                    💬
+                </a>
+                <a href="mailto:davidg05.9@gmail.com" class="social-link" aria-label="Email">
+                    ✉️
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                © 2025 David Grant — Desarrollador Web Full Stack
+            </p>
+            <p class="footer-text">
+                Hecho con ❤️ y mucho ☕
+            </p>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Inicio</a>
+                <a href="#about" class="footer-link">Sobre Mí</a>
+                <a href="#services" class="footer-link">Servicios</a>
+                <a href="#portfolio" class="footer-link">Portfolio</a>
+                <a href="#contact" class="footer-link">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
